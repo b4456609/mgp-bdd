@@ -1,0 +1,23 @@
+{
+  "name": "mgp-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon --watch src --harmony-async-await ./src/index.js",
+    "pro": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "fs-extra": "^2.0.0",
+    "gherkin": "^4.0.0",
+    "jsonpath": "^0.2.9",
+    "nodegit": "^0.16.0",
+    "recursive-readdir": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
