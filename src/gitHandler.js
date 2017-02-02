@@ -17,13 +17,13 @@ module.exports.pull = function() {
   // with the new one
     .then(function() {
     return repository.mergeBranches("master", "origin/master");
-  });
+  }).then(() => repository.getHeadCommit()).then(getCommitInfo);
 }
 
-module.exports.clone = function() {
+module.exports.clone = function(url) {
   //remove bdd foler
   fs.removeSync(repoDir);
-  return nodegit.Clone("https://github.com/b4456609/easylearn-uat.git", repoDir).then(function(repository) {
+  return nodegit.Clone(url, repoDir).then(function(repository) {
     return repository.getHeadCommit()
   }).then(getCommitInfo);
 }
