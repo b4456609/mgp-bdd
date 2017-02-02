@@ -37,7 +37,7 @@ function parse(input) {
           return {
             name: i.name,
             tags: i.tags.map((tag) => tag.name),
-            line: getContentBetweenLine(input, start, end)
+            line: getContentBetweenLine(input, start-1, end-1)
           };
         }
       })
