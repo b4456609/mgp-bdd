@@ -40,7 +40,8 @@ function parse(input) {
             line: getContentBetweenLine(input, start-1, end-1)
           };
         }
-      })
+        return null;
+      }).filter((i) => i !== null)
     };
   }
   catch(err){
