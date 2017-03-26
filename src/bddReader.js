@@ -17,6 +17,7 @@ module.exports.read = function (callback) {
       let parseResult = parse(fileString)
       return parseResult;
     }).filter((i) => i !== null);
+    console.log(target);
     callback(target);
   });
 }
@@ -30,7 +31,8 @@ function parse(input) {
       feature: gherkinDocument.feature.name,
       content: input,
       scenario: gherkinDocument.feature.children.map((i) => {
-        if (i.type === 'Scenario') {
+        console.log(i.type);
+        if (i.type === 'Scenario' || i.type === 'ScenarioOutline') {
           const lines = jp.query(i, '$..line');
           const start = Math.min(...lines);
           const end = Math.max(...lines);
