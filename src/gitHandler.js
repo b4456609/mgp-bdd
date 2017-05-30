@@ -2,7 +2,7 @@ var nodegit = require("nodegit");
 var path = require("path");
 var fs = require('fs-extra');
 
-var repoDir = "./bdd";
+var repoDir = "../movie-example/movie-uat";
 
 var repository;
 
