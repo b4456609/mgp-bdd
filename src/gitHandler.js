@@ -1,4 +1,4 @@
-var nodegit = require("nodegit");
+// var nodegit = require("nodegit");
 var path = require("path");
 var fs = require('fs-extra');
 

@@ -9,7 +9,7 @@ function getContentBetweenLine(fileString, start, end) {
 }
 
 module.exports.read = function (callback) {
-  recursive('./bdd', function(err, files) {
+  recursive('../movie-example/movie-uat', function(err, files) {
     // Files is an array of filename
     var target = files.filter((i) => i.endsWith('feature')).map((i) => {
       console.log(i);

@@ -25,21 +25,21 @@ app.post('/clone', function(req, res) {
   // gitHandler.clone(req.body.url).then((result) => {
   //   res.send(result)
   // })
-  res.send({id: "adfa", msg:"fasdf"})
+  res.send({id: "adfaaaaa", msg:"fasdf"})
 })
 
 app.post('/pull', function(req, res) {
   // gitHandler.pull().then((result) => {
   //   res.send(result)
   // })
-  res.send({id: "adfa", msg:"fasdf"})
+  res.send({id: "adfaaaaa", msg:"fasdf"})
 })
 
 app.get('/latestCommit', function(req, res) {
   // gitHandler.getLatestCommitInfo().then((result) => {
   //   res.send(result)
   // })
-  res.send({id: "adfa", msg:"fasdf"})
+  res.send({id: "adfaaaaa", msg:"fasdf"})
 })
 
 app.get('/parse', (req, res) => {
